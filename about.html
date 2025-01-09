@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brae Recipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf5e6;
+            color: #333;
+            background-image:url(https://st4.depositphotos.com/13349494/24069/i/450/depositphotos_240692792-stock-photo-top-view-spinach-leaves-vegetables.jpg);
+            background-size:cover;
+            height:500px;
+            background-position: center;
+
+        }
+
+        header {
+            background-color: #ffc107;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #555;
+        }
+
+        .hero {
+            text-align: center;
+            background-image: url('https://img.freepik.com/premium-photo/white-cement-wall-texture-backgrounds_707519-24233.jpg?semt=ais_hybrid'); 
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            color: #fff;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .content h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .content ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .content ul li::before {
+            content: '\2022';
+            color: #ffc107;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .hero-content {
+        position: relative;
+        z-index: 1;
+        color: lightyellow
+}   
+        footer {
+            background-color: lightyellow;
+            color: yellow;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+       .navbar {
+            background-color: #f7b500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a2c0a;
+        }
+
+        .navbar a {
+            color: #4a2c0a;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .search-bar button {
+            background-color: #4a2c0a;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .search-bar button:hover {
+            background-color: #6b4520;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brae Recipe</h1>
+        <nav>
+            <a href="file:///C:/Users/Neriza/OneDrive/Desktop/ICT%201Q/Q2/Q2Project/index.html">Home</a>
+            <a href="file:///C:/Users/Neriza/OneDrive/Desktop/ICT%201Q/Q2/Q2Project/index%202.html">Categories</a>
+            <a href="file:///C:/Users/Neriza/OneDrive/Desktop/ICT%201Q/Q2/Q2Project/about.html">About</a>
+            <a href="#">Submit Recipe</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Brae Recipe</h2>
+            <p>Brae Recipe is your ultimate online culinary companion, offering an array of delightful features to elevate your cooking experience. Explore a wide range of Filipino recipes, from beloved classics like adobo and sinigang to contemporary twists that bring a modern flair to traditional dishes. With step-by-step instructions, even the most intricate recipes become approachable, ensuring you can recreate every dish with confidence!</p>
+             <h3>What We Offer:</h3>
+        <ul>
+            <li>Everyone to have an experience of cooking or something new.</li>
+            <li>Discover carefully categorized recipes for effortless browsing, a user-friendly</li> <li>search bar for finding your favorites.</li>
+            <li> and a submit-a-recipe feature that invites you to share your culinary creations with the community.</li>
+                    <p>At Brae Recipe, there’s something delicious for everyone!</p>
+
+        </div>
+    </section>
+
+    </body>
+</html>

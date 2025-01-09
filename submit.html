@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Your Recipe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+  /* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://www.shutterstock.com/image-vector/two-top-bottom-seamless-patterns-600nw-2010728543.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+ /* Navbar */
+        .navbar {
+            background-color: #f7b500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a2c0a;
+        }
+
+        .navbar a {
+            color: #4a2c0a;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .search-bar button {
+            background-color: #4a2c0a;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .search-bar button:hover {
+            background-color: #6b4520;
+        }
+
+
+.form-container {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px solid gold;
+}
+
+button {
+  background-color: royalblue;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+</style>
+<body>
+  <div class="navbar">
+        <div class="logo">Brae Taste</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="file:///C:/Users/Neriza/OneDrive/Desktop/ICT%201Q/Q2/Q2Project/index%202.html">Categories</a>
+            <a href="file:///C:/Users/Neriza/OneDrive/Desktop/ICT%201Q/Q2/Q2Project/about.html">About</a>
+            <a href="file:///C:/Users/Neriza/OneDrive/Desktop/ICT%201Q/Q2/Q2Project/submit.html">Submit Recipe</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </div>
+  <div class="form-container">
+    <h1>Submit Your Recipe</h1>
+    <form>
+      <label for="recipe-title">Recipe Title</label>
+      <input type="text" id="recipe-title" name="recipe-title" placeholder="Enter recipe title" required>
+
+      <label for="ingredients">Ingredients</label>
+      <textarea id="ingredients" name="ingredients" rows="4" placeholder="Enter ingredients" required></textarea>
+
+      <label for="instructions">Instructions</label>
+      <textarea id="instructions" name="instructions" rows="6" placeholder="Enter instructions" required></textarea>
+
+      <button type="submit">Submit Recipe</button>
+    </form>
+  </div>
+</body>
+</html>
